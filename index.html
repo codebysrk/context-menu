@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Context Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Right Click Anywhere</h1>
+      <p>To see the custom context menu in action.</p>
+    </div>
+
+    <div id="context-menu" class="context-menu">
+      <ul class="menu-items">
+        <li class="menu-item" onclick="handleMenuClick('Refresh')">
+          <span class="icon">↻</span> Refresh
+        </li>
+        <li class="menu-item" onclick="handleMenuClick('Settings')">
+          <span class="icon">⚙️</span> Settings
+        </li>
+        <li class="menu-item" onclick="handleMenuClick('About')">
+          <span class="icon">ℹ️</span> About
+        </li>
+        <hr />
+        <li class="menu-item delete" onclick="handleMenuClick('Exit')">
+          <span class="icon">🚪</span> Exit
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
