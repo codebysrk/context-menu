@@ -25,3 +25,13 @@ This project demonstrates how to override the default browser context menu and r
 
 3. **Right Click**
    - Right-click anywhere on the dark background to see the menu.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6+)
+
+---
+
+Made with ❤️ by [CodeBySRK](https://github.com/codebysrk)
