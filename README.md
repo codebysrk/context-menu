@@ -11,3 +11,17 @@ This project demonstrates how to override the default browser context menu and r
 - 🧭 **Smart Positioning**: Automatically adjusts position to stay within the viewport (prevents overflow).
 - 🎭 **Animations**: Smooth fade-in animation.
 - 👆 **Interactive**: Handles click events for menu items.
+
+## How to Use
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/codebysrk/contexr-menu.git
+   ```
+2. **Open `index.html`**
+
+   - Simply double-click `index.html` to open it in your browser.
+   - Or use a Live Server extension in VS Code.
+
+3. **Right Click**
+   - Right-click anywhere on the dark background to see the menu.
