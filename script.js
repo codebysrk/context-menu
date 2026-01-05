@@ -40,3 +40,28 @@ scope.addEventListener("click", (e) => {
     contextMenu.style.display = "none";
   }
 });
+
+function handleMenuClick(action) {
+  console.log(`User clicked: ${action}`);
+
+  // Hide menu immediately
+  contextMenu.style.display = "none";
+
+  // Perform action
+  switch (action) {
+    case "Refresh":
+      window.location.reload();
+      break;
+    case "Settings":
+      alert("Settings clicked! (Demo)");
+      break;
+    case "About":
+      alert("Custom Context Menu v1.0\nCreated by CodeBySRK");
+      break;
+    case "Exit":
+      if (confirm("Are you sure you want to close this tab?")) {
+        window.close(); // Only works for scripts that opened the window
+      }
+      break;
+  }
+}
