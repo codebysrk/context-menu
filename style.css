@@ -79,3 +79,9 @@ hr {
   color: var(--danger);
   background-color: var(--danger-bg);
 }
+
+@media (max-width: 768px) {
+  .context-menu {
+    width: 180px;
+  }
+}
