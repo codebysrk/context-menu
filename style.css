@@ -1,3 +1,15 @@
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #fff;
+  --menu-bg: #2d2d2d;
+  --menu-border: #3d3d3d;
+  --menu-shadow: rgba(0, 0, 0, 0.3);
+  --item-hover: #3d3d3d;
+  --text-muted: #e0e0e0;
+  --danger: #ff6b6b;
+  --danger-bg: rgba(255, 107, 107, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +22,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   overflow: hidden;
 }
 
@@ -22,12 +34,13 @@ body {
 .context-menu {
   position: absolute;
   display: none; /* Hidden by default */
-  background: #2d2d2d;
+  background: var(--menu-bg);
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px var(--menu-shadow);
+
   width: 200px;
   padding: 10px 0;
-  border: 1px solid #3d3d3d;
+  border: 1px solid var(--menu-border);
 }
 
 .menu-items {
@@ -41,12 +54,12 @@ body {
   align-items: center;
   gap: 10px;
   transition: background 0.2s;
-  color: #e0e0e0;
+  color: var(--text-muted);
   font-size: 14px;
 }
 
 .menu-item:hover {
-  background-color: #3d3d3d;
+  background-color: var(--item-hover);
 }
 
 .menu-item .icon {
@@ -57,11 +70,11 @@ body {
 
 hr {
   border: none;
-  border-top: 1px solid #3d3d3d;
+  border-top: 1px solid var(--menu-border);
   margin: 5px 0;
 }
 
 .menu-item.delete:hover {
-  color: #ff6b6b;
-  background-color: rgba(255, 107, 107, 0.1);
+  color: var(--danger);
+  background-color: var(--danger-bg);
 }
