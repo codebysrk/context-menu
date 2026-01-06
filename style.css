@@ -60,6 +60,7 @@ body {
 
 .menu-item:hover {
   background-color: var(--item-hover);
+  transform: scale(1.02);
 }
 
 .menu-item .icon {
