@@ -41,7 +41,18 @@ scope.addEventListener("click", (e) => {
   }
 });
 
-function handleMenuClick(action) {
+// Event Delegation for Menu Items
+const menuItems = document.querySelector(".menu-items");
+
+menuItems.addEventListener("click", (e) => {
+  const item = e.target.closest(".menu-item");
+  if (!item) return;
+
+  const action = item.dataset.action;
+  handleAction(action);
+});
+
+const handleAction = (action) => {
   console.log(`User clicked: ${action}`);
 
   // Hide menu immediately
@@ -64,4 +75,4 @@ function handleMenuClick(action) {
       }
       break;
   }
-}
+};

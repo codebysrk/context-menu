@@ -16,17 +16,17 @@
 
     <div id="context-menu" class="context-menu">
       <ul class="menu-items">
-        <li class="menu-item" onclick="handleMenuClick('Refresh')">
+        <li class="menu-item" data-action="Refresh">
           <span class="icon">↻</span> Refresh
         </li>
-        <li class="menu-item" onclick="handleMenuClick('Settings')">
+        <li class="menu-item" data-action="Settings">
           <span class="icon">⚙️</span> Settings
         </li>
-        <li class="menu-item" onclick="handleMenuClick('About')">
+        <li class="menu-item" data-action="About">
           <span class="icon">ℹ️</span> About
         </li>
         <hr />
-        <li class="menu-item delete" onclick="handleMenuClick('Exit')">
+        <li class="menu-item delete" data-action="Exit">
           <span class="icon">🚪</span> Exit
         </li>
       </ul>
