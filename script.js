@@ -27,7 +27,7 @@ scope.addEventListener("contextmenu", (e) => {
   contextMenu.style.left = `${x}px`;
   contextMenu.style.display = "block";
 
-  // Add simple animation
+
   contextMenu.style.opacity = "0";
   setTimeout(() => {
     contextMenu.style.opacity = "1";
