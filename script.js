@@ -34,7 +34,7 @@ scope.addEventListener("contextmenu", (e) => {
   }, 10);
 });
 
-// Click anywhere else to close
+
 scope.addEventListener("click", (e) => {
   if (e.target.offsetParent !== contextMenu) {
     contextMenu.style.display = "none";
