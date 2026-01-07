@@ -4,7 +4,8 @@ A simple, lightweight, and customizable right-click context menu implementation 
 
 This project demonstrates how to override the default browser context menu and replace it with a styled, functional custom menu.
 
-## Features
+- **Share Options**: Quickly share the page via Twitter, Facebook, or copy the link.
+- **Responsive Design**: Adapts for smaller screens.
 
 - 🖱️ **Custom Design**: Fully styled using CSS with dark mode aesthetic.
 - ⚡ **Lightweight**: Pure Vanilla JS, no dependencies.
