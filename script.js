@@ -12,7 +12,6 @@ scope.addEventListener("contextmenu", (e) => {
   let x = mouseX;
   let y = mouseY;
 
-  // Check if menu goes off right
   if (mouseX + 200 > windowWidth) {
     x = windowWidth - 200;
   }
