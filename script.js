@@ -41,9 +41,7 @@ scope.addEventListener("click", (e) => {
   }
 });
 
-// Event Delegation for Menu Items:
-// By attaching a single listener to the parent .menu-items,
-// we improve performance and handle dynamically added items if any.
+
 const menuItems = document.querySelector(".menu-items");
 
 menuItems.addEventListener("click", (e) => {
