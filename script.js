@@ -62,6 +62,17 @@ const handleAction = (action) => {
 
   // Perform action
   switch (action) {
+    case "CopyLink":
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        alert("Link copied to clipboard!");
+      });
+      break;
+    case "Twitter":
+      const twitterUrl = `https://twitter.com/intent/tweet?text=Check out this custom context menu!&url=${encodeURIComponent(
+        window.location.href
+      )}`;
+      window.open(twitterUrl, "_blank");
+      break;
     case "Refresh":
       window.location.reload();
       break;
