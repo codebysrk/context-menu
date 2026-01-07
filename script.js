@@ -55,7 +55,7 @@ menuItems.addEventListener("click", (e) => {
 const handleAction = (action) => {
   console.log(`User clicked: ${action}`);
 
-  // Hide menu immediately
+
   contextMenu.style.display = "none";
 
   // Perform action
