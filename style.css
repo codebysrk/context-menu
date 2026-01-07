@@ -110,4 +110,14 @@ hr {
   .context-menu {
     width: 180px;
   }
+  .submenu {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding-left: 20px;
+  }
 }
