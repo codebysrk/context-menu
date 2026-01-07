@@ -88,7 +88,7 @@ const handleAction = (action) => {
       break;
     case "Exit":
       if (confirm("Are you sure you want to close this tab?")) {
-        window.close(); // Only works for scripts that opened the window
+        window.close(); 
       }
       break;
   }
