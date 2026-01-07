@@ -55,10 +55,8 @@ menuItems.addEventListener("click", (e) => {
 const handleAction = (action) => {
   console.log(`User clicked: ${action}`);
 
-
   contextMenu.style.display = "none";
 
-  // Perform action
   switch (action) {
     case "CopyLink":
       navigator.clipboard.writeText(window.location.href).then(() => {
