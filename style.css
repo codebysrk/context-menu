@@ -63,6 +63,21 @@ body {
   transition: background 0.2s;
   color: var(--text-muted);
   font-size: 14px;
+  position: relative; /* For submenu positioning */
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 180px;
+  background: var(--submenu-bg);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px var(--submenu-shadow);
+  border: 1px solid var(--menu-border);
+  display: none; /* Hidden by default */
+  list-style: none;
+  padding: 5px 0;
 }
 
 .menu-item:hover {
