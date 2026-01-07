@@ -73,6 +73,12 @@ const handleAction = (action) => {
       )}`;
       window.open(twitterUrl, "_blank");
       break;
+    case "Facebook":
+      const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+        window.location.href
+      )}`;
+      window.open(facebookUrl, "_blank");
+      break;
     case "Refresh":
       window.location.reload();
       break;
