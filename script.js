@@ -17,7 +17,6 @@ scope.addEventListener("contextmenu", (e) => {
     x = windowWidth - 200;
   }
 
-  // Check if menu goes off bottom
 
   if (mouseY + 200 > windowHeight) {
     y = windowHeight - 200;
