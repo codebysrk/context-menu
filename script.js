@@ -83,6 +83,9 @@ const handleAction = (action) => {
         window.close();
       }
       break;
+    case "ToggleLight":
+      setTheme("light");
+      break;
   }
 };
 
