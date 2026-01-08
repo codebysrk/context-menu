@@ -86,6 +86,9 @@ const handleAction = (action) => {
     case "ToggleLight":
       setTheme("light");
       break;
+    case "ToggleDark":
+      setTheme("dark");
+      break;
   }
 };
 
