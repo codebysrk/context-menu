@@ -13,6 +13,10 @@
   --submenu-shadow: rgba(0, 0, 0, 0.5);
 }
 
+body.light-mode {
+  /* Light Theme Overrides */
+}
+
 html {
   scroll-behavior: smooth;
 }
