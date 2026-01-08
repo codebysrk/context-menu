@@ -16,7 +16,6 @@ scope.addEventListener("contextmenu", (e) => {
     x = windowWidth - 200;
   }
 
-
   if (mouseY + 200 > windowHeight) {
     y = windowHeight - 200;
   }
@@ -25,20 +24,17 @@ scope.addEventListener("contextmenu", (e) => {
   contextMenu.style.left = `${x}px`;
   contextMenu.style.display = "block";
 
-
   contextMenu.style.opacity = "0";
   setTimeout(() => {
     contextMenu.style.opacity = "1";
   }, 10);
 });
 
-
 scope.addEventListener("click", (e) => {
   if (e.target.offsetParent !== contextMenu) {
     contextMenu.style.display = "none";
   }
 });
-
 
 const menuItems = document.querySelector(".menu-items");
 
@@ -84,8 +80,12 @@ const handleAction = (action) => {
       break;
     case "Exit":
       if (confirm("Are you sure you want to close this tab?")) {
-        window.close(); 
+        window.close();
       }
       break;
   }
+};
+
+const setTheme = (theme) => {
+  // Theme logic will go here
 };
