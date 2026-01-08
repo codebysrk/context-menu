@@ -100,3 +100,9 @@ const setTheme = (theme) => {
     document.body.classList.remove("light-mode");
   }
 };
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  setTheme(savedTheme);
+}
