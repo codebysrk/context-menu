@@ -93,6 +93,7 @@ const handleAction = (action) => {
 };
 
 const setTheme = (theme) => {
+  localStorage.setItem("theme", theme);
   if (theme === "light") {
     document.body.classList.add("light-mode");
   } else {
