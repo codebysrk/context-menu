@@ -92,6 +92,7 @@ body {
   display: none; /* Hidden by default */
   list-style: none;
   padding: 5px 0;
+  z-index: 100;
 }
 
 .menu-item:hover {
