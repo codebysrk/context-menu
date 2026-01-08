@@ -15,6 +15,15 @@
 
 body.light-mode {
   /* Light Theme Overrides */
+  --bg-color: #f0f2f5;
+  --text-color: #333;
+  --menu-bg: #ffffff;
+  --menu-border: #ddd;
+  --menu-shadow: rgba(0, 0, 0, 0.1);
+  --item-hover: #f0f0f0;
+  --text-muted: #555;
+  --submenu-bg: #ffffff;
+  --submenu-shadow: rgba(0, 0, 0, 0.15);
 }
 
 html {
