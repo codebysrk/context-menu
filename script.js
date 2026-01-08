@@ -93,5 +93,9 @@ const handleAction = (action) => {
 };
 
 const setTheme = (theme) => {
-  // Theme logic will go here
+  if (theme === "light") {
+    document.body.classList.add("light-mode");
+  } else {
+    document.body.classList.remove("light-mode");
+  }
 };
