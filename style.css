@@ -75,7 +75,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
   color: var(--text-muted);
   font-size: 14px;
   position: relative; /* For submenu positioning */
