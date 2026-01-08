@@ -1,3 +1,7 @@
+/**
+ * Custom Context Menu with Theme Toggle
+ * Version: 1.1
+ */
 const contextMenu = document.getElementById("context-menu");
 const scope = document.querySelector("body");
 
