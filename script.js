@@ -69,6 +69,9 @@ const handleAction = (action) => {
       )}`;
       window.open(facebookUrl, "_blank");
       break;
+    case "ViewSource":
+      // Implementation coming
+      break;
     case "Refresh":
       window.location.reload();
       break;
