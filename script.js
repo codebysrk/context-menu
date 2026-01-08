@@ -70,7 +70,7 @@ const handleAction = (action) => {
       window.open(facebookUrl, "_blank");
       break;
     case "ViewSource":
-      // Implementation coming
+      window.open("view-source:" + window.location.href, "_blank");
       break;
     case "Refresh":
       window.location.reload();
