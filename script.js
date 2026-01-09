@@ -58,7 +58,7 @@ const handleAction = (action) => {
   switch (action) {
     case "CopyLink":
       navigator.clipboard.writeText(window.location.href).then(() => {
-        alert("Link copied to clipboard!");
+        showToast("Link copied to clipboard!", "success");
       });
       break;
     case "Twitter":
