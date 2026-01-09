@@ -133,6 +133,15 @@ const showToast = (message, type = "info") => {
   closeBtn.classList.add("close-btn");
   toast.appendChild(closeBtn);
 
+  // Close on click
+  closeBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent toast click if needed
+    toast.classList.add("hide");
+    toast.addEventListener("animationend", () => {
+      toast.remove();
+    });
+  });
+
   // Append to container
   container.appendChild(toast);
 
