@@ -148,3 +148,25 @@ hr {
   flex-direction: column;
   gap: 10px;
 }
+
+/* Toast Basic Styles */
+.toast {
+  background: var(--menu-bg);
+  color: var(--text-color);
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--menu-shadow);
+  border: 1px solid var(--menu-border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 250px;
+  max-width: 350px;
+  animation: slideIn 0.3s ease, fadeOut 0.3s ease forwards;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.toast:hover {
+  transform: translateX(-5px);
+}
