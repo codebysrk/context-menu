@@ -113,3 +113,11 @@ const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
   setTheme(savedTheme);
 }
+
+/**
+ * Toast Notification System
+ */
+const showToast = (message, type = "info") => {
+  // TODO: Implement toast creation
+  console.log("Toast:", message, type);
+};
