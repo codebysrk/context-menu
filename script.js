@@ -115,7 +115,9 @@ if (savedTheme) {
 }
 
 /**
- * Toast Notification System
+ * Displays a toast notification with the specified message and type.
+ * @param {string} message - The text to display
+ * @param {'info'|'success'|'warning'|'error'} [type='info'] - The style variant of the toast
  */
 const showToast = (message, type = "info") => {
   const container = document.getElementById("toast-container");
