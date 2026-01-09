@@ -165,6 +165,27 @@ hr {
   animation: slideIn 0.3s ease;
   cursor: pointer;
   transition: transform 0.2s;
+  border-left: 4px solid transparent;
+}
+
+.toast.success {
+  border-left-color: #2ecc71;
+}
+
+.toast.success .icon {
+  color: #2ecc71;
+}
+
+.toast.info {
+  border-left-color: #3498db;
+}
+
+.toast.info .icon {
+  color: #3498db;
+}
+
+.toast.warning {
+  border-left-color: #f1c40f;
 }
 
 .toast .close-btn {
