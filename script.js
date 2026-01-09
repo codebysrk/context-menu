@@ -127,4 +127,12 @@ const showToast = (message, type = "info") => {
 
   // Append to container
   container.appendChild(toast);
+
+  // Auto remove
+  setTimeout(() => {
+    toast.classList.add("hide");
+    toast.addEventListener("animationend", () => {
+      toast.remove();
+    });
+  }, 3000);
 };
