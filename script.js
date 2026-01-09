@@ -123,7 +123,15 @@ const showToast = (message, type = "info") => {
   // Create toast element
   const toast = document.createElement("div");
   toast.classList.add("toast", type);
-  toast.innerText = message;
+
+  const text = document.createElement("span");
+  text.innerText = message;
+  toast.appendChild(text);
+
+  const closeBtn = document.createElement("span");
+  closeBtn.innerText = "×";
+  closeBtn.classList.add("close-btn");
+  toast.appendChild(closeBtn);
 
   // Append to container
   container.appendChild(toast);
