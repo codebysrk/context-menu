@@ -207,7 +207,11 @@ hr {
   transform: translateX(-5px);
 }
 
-/* Animations */
+/* 
+  Animations for Toast Notifications 
+  slideIn: Enters from the right
+  fadeOut: Exits to the right
+*/
 @keyframes slideIn {
   from {
     transform: translateX(100%);
