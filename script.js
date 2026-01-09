@@ -118,6 +118,13 @@ if (savedTheme) {
  * Toast Notification System
  */
 const showToast = (message, type = "info") => {
-  // TODO: Implement toast creation
-  console.log("Toast:", message, type);
+  const container = document.getElementById("toast-container");
+
+  // Create toast element
+  const toast = document.createElement("div");
+  toast.classList.add("toast", type);
+  toast.innerText = message;
+
+  // Append to container
+  container.appendChild(toast);
 };
