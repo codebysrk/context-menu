@@ -167,6 +167,17 @@ hr {
   transition: transform 0.2s;
 }
 
+.toast .close-btn {
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close-btn:hover {
+  opacity: 1;
+}
+
 .toast.hide {
   animation: fadeOut 0.3s ease forwards;
 }
