@@ -80,10 +80,10 @@ const handleAction = (action) => {
       window.location.reload();
       break;
     case "Settings":
-      alert("Settings clicked! (Demo)");
+      showToast("Settings clicked! (Demo)", "info");
       break;
     case "About":
-      alert("Custom Context Menu v1.0\nCreated by CodeBySRK");
+      showToast("Custom Context Menu v1.1\nCreated by CodeBySRK", "info");
       break;
     case "Exit":
       if (confirm("Are you sure you want to close this tab?")) {
