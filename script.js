@@ -160,3 +160,14 @@ const showToast = (message, type = "info") => {
     });
   }, 3000);
 };
+
+const addLog = (action) => {
+  const li = document.createElement("li");
+  li.classList.add("log-entry");
+  li.innerHTML = `
+        <span class="icon">🔹</span>
+        <span class="text">Action: <strong>${action}</strong></span>
+    `;
+
+  logsList.prepend(li);
+};
