@@ -170,9 +170,10 @@ const showToast = (message, type = "info") => {
 const addLog = (action) => {
   const li = document.createElement("li");
   li.classList.add("log-entry");
+  const time = new Date().toLocaleTimeString();
   li.innerHTML = `
         <span class="icon">🔹</span>
-        <span class="text">Action: <strong>${action}</strong></span>
+        <span class="text"><strong>${time}</strong>: ${action}</span>
     `;
 
   logsList.prepend(li);
