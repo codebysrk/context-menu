@@ -229,3 +229,66 @@ hr {
     transform: translateX(100%);
   }
 }
+
+/* Logs Panel */
+.logs-panel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+body.light-mode .logs-panel {
+  background: #f4f4f4;
+  color: #333;
+  border-color: #ddd;
+}
+/* Dark mode support if applicable, assuming body has dark background normally or class */
+/* Actually looking at earlier code, default seems to be dark or unspecified, let's stick to generic or use variables if defined. 
+   The file used hardcoded hex colors mostly. I'll stick to that for now. */
+
+.logs-panel.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.logs-panel h3 {
+  margin: 0;
+  padding: 15px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+#logs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.log-entry {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.log-entry:last-child {
+  border-bottom: none;
+}
