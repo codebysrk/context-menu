@@ -6,6 +6,11 @@ const contextMenu = document.getElementById("context-menu");
 const scope = document.querySelector("body");
 const logsPanel = document.getElementById("logs-panel");
 const logsList = document.getElementById("logs-list");
+const clearLogsBtn = document.getElementById("clear-logs");
+
+clearLogsBtn.addEventListener("click", () => {
+  logsList.innerHTML = "";
+});
 
 scope.addEventListener("contextmenu", (e) => {
   e.preventDefault();
