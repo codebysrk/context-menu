@@ -4,6 +4,8 @@
  */
 const contextMenu = document.getElementById("context-menu");
 const scope = document.querySelector("body");
+const logsPanel = document.getElementById("logs-panel");
+const logsList = document.getElementById("logs-list");
 
 scope.addEventListener("contextmenu", (e) => {
   e.preventDefault();
@@ -95,6 +97,9 @@ const handleAction = (action) => {
       break;
     case "ToggleDark":
       setTheme("dark");
+      break;
+    case "ToggleLogs":
+      logsPanel.classList.toggle("hidden");
       break;
   }
 };
