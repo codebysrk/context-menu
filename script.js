@@ -54,6 +54,7 @@ menuItems.addEventListener("click", (e) => {
 
 const handleAction = (action) => {
   console.log(`User clicked: ${action}`);
+  addLog(action);
 
   contextMenu.style.display = "none";
 
