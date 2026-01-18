@@ -1,4 +1,4 @@
-# Custom Context Menu
+# Custom Context Menu 
 
 A simple, lightweight, and customizable right-click context menu implementation using HTML, CSS, and JavaScript.
 
